@@ -1,4 +1,4 @@
 project(startmon)
 
-add_executable(startmon main.cpp)
+add_executable(startmon main.c)
 
