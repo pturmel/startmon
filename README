@@ -1,0 +1,15 @@
+Process/Thread Start Monitor
+
+Monitor the creation of new processes on your system using the
+Process Connector feature of the Linux Kernel, and subsystem
+within NetLink.
+
+This utility requires root privileges, or equivalent capabilities.
+It is intended to be safe to setuid, as it exposes no information
+that isn't already available in /proc.  However, it has not been
+audited for setuid usage.
+
+For each new process or thread, startmon issues one line of text
+to STDOUT containing the event name, the parent process or thread,
+if known, the new process or thread's ID, and a sanitized version
+the process' command line.
